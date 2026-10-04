@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07100b">
+  <title>پنل VLESS</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><span class="logo">V</span><div><h1>پنل VLESS</h1><div class="sub" id="domainLabel">در حال بارگذاری…</div></div></div>
+      <span class="badge ok">آنلاین</span>
+    </header>
+    <section class="stats">
+      <article class="stat"><span>کانفیگ‌های ثابت</span><b>۳</b></article>
+      <article class="stat"><span>حجم</span><b>نامحدود</b></article>
+      <article class="stat"><span>اعتبار</span><b>دائمی</b></article>
+      <article class="stat"><span>اتصالات فعال</span><b id="connections">۰</b></article>
+    </section>
+    <section class="panel">
+      <div class="section-heading"><div><h2>کانفیگ‌ها</h2><p>سه شناسهٔ مستقل VLESS · WebSocket · TLS</p></div><button class="button secondary" id="refresh">بروزرسانی</button></div>
+      <div id="configGrid" class="config-grid"><div class="empty">در حال بارگذاری کانفیگ‌ها…</div></div>
+    </section>
+    <p class="notice">هر لینک را فقط با فرد موردنظر به‌اشتراک بگذارید. پنل رمز ندارد و هر بازدیدکننده می‌تواند این سه کانفیگ را مشاهده کند.</p>
+    <footer>مدت و حجم هر سه کانفیگ نامحدود است · <span id="uptime">00:00:00</span></footer>
+  </main>
+  <div id="toastWrap" class="toast-wrap" aria-live="polite"></div>
+  <script src="/static/js/panel.js" defer></script>
+</body>
+</html>
